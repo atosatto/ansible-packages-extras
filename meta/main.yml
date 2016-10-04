@@ -2,7 +2,7 @@
 
 galaxy_info:
   author: Andrea Tosatto
-  description: Provides extra library scripts to manipulate APT and RPM packages.
+  description: Library modules to extract additional package informations from YUM and APT.
   license: MIT
   min_ansible_version: 2.1
   platforms:
