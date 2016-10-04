@@ -1,0 +1,31 @@
+---
+
+ansible:
+#  verbose: true
+  playbook: tests/test.yml
+
+driver:
+  name: docker
+
+docker:
+  containers:
+    - name: centos-7
+      image: centos
+      image_version: 7
+      ansible_groups:
+        - yum_madison
+
+    - name: ubuntu-16.04
+      image: ubuntu
+      image_version: 16.04
+      ansible_groups:
+        - apt_madison
+
+    - name: debian-8
+      image: debian
+      image_version: 8
+      ansible_groups:
+        - apt_madison
+
+verifier:
+  name: testinfra

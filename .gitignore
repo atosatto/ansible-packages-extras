@@ -1,0 +1,8 @@
+.molecule/
+.vagrant/
+.cache/
+
+*.retry
+
+__pycache__
+*.pyc
