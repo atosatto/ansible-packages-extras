@@ -3,7 +3,7 @@ Ansible Library: Package Extras
 
 [![Build Status](https://travis-ci.org/atosatto/ansible-package-extras.svg?branch=master)](https://travis-ci.org/atosatto/ansible-package-extras)
 
-Library modules to get additional package informations from RPM and APT.
+Library modules to extract additional package informations from RPM and APT.
 
 Requirements
 ------------
@@ -15,8 +15,8 @@ Dependencies
 
 The `apt_madison` module depends on `python-apt`.
 
-Example Playbook
-----------------
+Usage Example
+-------------
 
     - name: Extract the sudo package version
       yum_madison:
