@@ -1,4 +1,4 @@
-Ansible Library: Package Extra
+Ansible Library: Package Extras
 ===============================
 
 [![Build Status](https://travis-ci.org/atosatto/ansible-package-extras.svg?branch=master)](https://travis-ci.org/atosatto/ansible-package-extras)
