@@ -24,4 +24,4 @@ galaxy_info:
     - apt
     - yum
 
-dependencies: []
+dependencies: [ ]
