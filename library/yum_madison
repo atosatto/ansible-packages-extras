@@ -27,7 +27,8 @@ def main():
         argument_spec=dict(
             package=dict(required=True, aliases=['pkg', 'name'], type='str'),
             update_cache = dict(default=False, aliases=['update-cache'], type='bool')
-        ))
+        ),
+        supports_check_mode=True)
 
     yumbin = module.get_bin_path('yum')
     pkg_name = module.params.get('package')

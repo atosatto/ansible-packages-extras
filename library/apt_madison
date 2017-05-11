@@ -29,7 +29,8 @@ def main():
         argument_spec=dict(
             package=dict(required=True, aliases=['pkg', 'name'], type='str'),
             update_cache = dict(default=False, aliases=['update-cache'], type='bool')
-        ))
+        ),
+        supports_check_mode=True)
 
     cache = apt.Cache()
     if module.params.get('update_cache'):
