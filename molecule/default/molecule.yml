@@ -1,0 +1,49 @@
+---
+
+scenario:
+  name: default
+
+driver:
+  name: docker
+
+dependency:
+  name: galaxy
+
+platforms:
+  - name: centos-6
+    image: centos:6
+    groups:
+      - yum_madison
+
+  - name: centos-7
+    image: centos:7
+    groups:
+      - yum_madison
+
+  - name: ubuntu-16.04
+    image: ubuntu:16.04
+    groups:
+      - apt_madison
+
+  - name: debian-8
+    image: debian:8
+    groups:
+      - apt_madison
+
+  - name: debian-9
+    image: debian:9
+    groups:
+      - apt_madison
+
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+
+lint:
+  name: yamllint
+
+verifier:
+  name: testinfra
+  lint:
+    name: flake8

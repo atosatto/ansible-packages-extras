@@ -1,7 +1,5 @@
 ---
 
-# Install Tests Dependencies
-
 - hosts: all
   roles:
     - { role: ansible-packages-extras }
